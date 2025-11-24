@@ -1,0 +1,15 @@
+<resources>
+    <color name="colorBackground">#121212</color>  <!-- Dark background -->
+    <color name="colorCard">#1E1E1E</color>       <!-- Slightly lighter card -->
+    <color name="colorPrimary">#FCA311</color>    <!-- Gold accent -->
+    <color name="colorTextPrimary">#FFFFFF</color> <!-- White text -->
+    <color name="colorTextSecondary">#B0B0B0</color> <!-- Subtle gray text -->
+    <color name="black">#121212</color>
+    <color name="yellow">#FFC107</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_gray">#B0B0B0</color>
+    <color name="switch_track">#D0D0D0</color>
+    <color name="switch_thumb">#5161F1</color>
+
+
+</resources>

@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="6dp">
+
+    <!-- Avatar Image -->
+    <FrameLayout
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_gravity="center"
+        android:elevation="4dp"
+        android:background="@drawable/bg_avatar_circle">
+
+        <!-- Actual Image -->
+        <ImageView
+            android:id="@+id/imageAvatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/avatar_nathan"
+            android:scaleType="centerCrop"
+            android:contentDescription="Friend Avatar"
+            android:clipToOutline="true"
+            android:outlineProvider="background" />
+
+        <!-- Ripple overlay (touch effect) -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_ripple_circle"
+            android:clickable="true"
+            android:focusable="true" />
+    </FrameLayout>
+
+    <!-- Name Label -->
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Nathan"
+        android:textColor="#252243"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+</LinearLayout>

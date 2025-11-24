@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Base.Theme.ExpenseX" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Optional: customize colors -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <!-- Disable Material3 default button tint -->
+        <item name="colorButtonNormal">@null</item>
+        <item name="android:colorButtonNormal">@null</item>
+        <item name="materialButtonStyle">@style/Widget.AppCompat.Button</item>
+    </style>
+
+    <style name="Theme.ExpenseX" parent="Base.Theme.ExpenseX" />
+</resources>

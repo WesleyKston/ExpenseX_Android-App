@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="BottomSheetTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/ShapeAppearanceOverlay.MaterialComponents.BottomSheet</item>
+    </style>
+
+
+    <style name="ShapeAppearanceOverlay.BottomSheetDialog.Rounded" parent="">
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.MaterialComponents.MediumComponent</item>
+        <item name="android:background">@drawable/bg_bottomsheet_rounded</item>
+    </style>
+
+</resources>

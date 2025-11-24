@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_bottomsheet_rounded"
+    android:paddingTop="12dp"
+    android:paddingBottom="20dp"
+    android:paddingHorizontal="20dp"
+    tools:context=".AddIncomeBottomSheet">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- drag handle -->
+        <View
+            android:layout_width="40dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#DADDE2"
+            android:alpha="0.9"
+            android:layout_marginBottom="12dp"
+            android:clipToOutline="true" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Income"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#252243" />
+
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quickly record your earnings"
+            android:textSize="13sp"
+            android:textColor="#6B7280"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Source -->
+        <EditText
+            android:id="@+id/etIncomeSource"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Income Source (e.g. Salary)"
+            android:inputType="text"
+            android:background="@drawable/input_field_bg"
+            android:paddingHorizontal="12dp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Amount -->
+        <EditText
+            android:id="@+id/etIncomeAmount"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Amount (₹)"
+            android:inputType="numberDecimal"
+            android:background="@drawable/input_field_bg"
+            android:paddingHorizontal="12dp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Date Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_calendar"
+                android:tint="#4AB8E8" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today"
+                android:textColor="#252243"
+                android:textSize="14sp"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/btnCancel"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="CANCEL"
+                android:textAllCaps="true"
+                android:textColor="#6B7280"
+                android:background="@drawable/btn_cancel" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:text="SAVE"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/btn_gradient_blue" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,17 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Right Arrow Shape -->
+    <path
+        android:fillColor="#252243"
+        android:pathData="M8,4l8,8l-8,8"
+        android:strokeWidth="2"
+        android:strokeColor="#252243"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillAlpha="0"
+        android:strokeAlpha="1" />
+</vector>

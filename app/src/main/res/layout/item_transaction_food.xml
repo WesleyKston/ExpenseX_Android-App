@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="12dp"
+    android:background="@drawable/bg_card_transaction"
+    android:layout_marginBottom="10dp"
+    android:elevation="4dp">
+
+    <!-- Icon -->
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/ic_food"
+        android:background="@drawable/bg_profile_circle_white"
+        android:padding="10dp"
+        android:contentDescription="Food Icon" />
+
+    <!-- Texts and Progress -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="12dp">
+
+        <TextView
+            android:id="@+id/tvTransactionTitleFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dinner with Friends"
+            android:textColor="#252243"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="03 Nov 2025"
+            android:textColor="#808080"
+            android:textSize="13sp"
+            android:layout_marginTop="2dp" />
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="6dp"
+            android:progress="45"
+            android:max="100"
+            android:progressDrawable="@drawable/progress_blue" />
+    </LinearLayout>
+
+    <!-- Amount -->
+    <TextView
+        android:id="@+id/tvAmountFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₹820"
+        android:textColor="#5161F1"
+        android:textStyle="bold"
+        android:textSize="14sp" />
+</LinearLayout>
